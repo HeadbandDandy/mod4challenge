@@ -9,10 +9,37 @@
     <title>Trivia-Game</title>
 </head>
 <!--Within the body of the text I want to have a tab section that allows user to view highscore-->
+<!--Within the body of the text I want the first thing the User to see is a decorated "Are you Ready to Start button?"-->
 <!--Within the Body will also be the container for the quiz form-->
 <!--To the right of the body I want a clock/timer section that functions as required for the challenge-->
 <!--container will also be responsive and flexible to allow user to view high scores after quiz-->
 <body>
-    
+    <header class="header" id="top-section">
+        <h1>Unlimited Trivia</h1>
+        <ul class="highscore">
+            <li><a href="./highscores.html">High Scores</a></li>
+        </ul>
+    </header>
+<!--Section above contains html link to high scores as well as header-->
+    <div class="container">
+        <section>
+            <h2>Are You Ready?</h2>
+            <break>
+               <a href="/quiz.html">
+                   <button>
+                       <h4>
+                           Yes!
+                       </h4>
+                   </button>
+               </a>
+                <button class="no-button" id="fear"><h4>
+                    I am afraid!
+
+                </h4></button>
+            </break>
+        </section>
+
+    </div>
+    <!--Section above contains the buttons and the container to start the quiz-->
 </body>
 </html>
