@@ -1,0 +1,44 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prepare {
+    font-size: large;
+    box-sizing: content-box;
+    height:100vh;
+    width:40%;
+    align-items: center;
+    align-content: center;
+
+}
+
+.start-btn {
+    font-size: 48px;
+    float: center;
+}
+
+.container {
+    font-size: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 50px 10px 50px;
+}
+
+.btn{
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+

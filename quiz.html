@@ -4,26 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz<title>
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <script defer src="./assets/js/script.js"></script>
+    <title>Quiz</title>
 </head>
 <body>
-    <header class="quiz-header">
-       <h1>Prepare to Begin</h1> 
-       <ul>
-           <li>
-               When you press start the game will begin 
-           </li>
-           <li>
-               Answer correctly...move onto the next question and increase your score
-           </li>
-           <li>
-               Answer incorrectly...suffer the consequences
-           </li>
-       </ul>
+    <header class="prepare">
+        <h1>
+            Prepare to Begin
+        </h1>
+        <ul>
+            <li>
+                When you are ready click start and the game will begin.
+            </li>
+            <li>
+                You will have 60 seconds to answer the questions correctly.
+            </li>
+            <li>
+                Answer correctly...you will have a chance at increasing your high score.
+            </li>
+            <li>
+                Answer incorrectly...SUFFER the consequences.
+            </li>
+        </ul>
     </header>
 
-    <div>
-        <h3></h3>
+    <section>
+        <h2>
+            <a href="#quiz-container" class="start-btn"> Start!</a>
+        </h2>
+    </section>
+
+    <div class="container">
+        <div class="quiz-container" class="hide">
+            <div id="question" class="question-header"> Question</div>
+            <div id="quiz-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <div class="controls">
+                <button id="next-button">Next</button>
+
+            </div>
+
+        </div>
     </div>
     
 </body>
