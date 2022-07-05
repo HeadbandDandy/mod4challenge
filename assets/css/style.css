@@ -25,11 +25,15 @@ body {
     font-size: 48px;
     float: center;
 }
+.start-btn:hover {
+    color: palevioletred;
+}
 
 .container {
-    font-size: 60px;
+    font-size: 70px;
     align-items: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     margin: 10px 50px 10px 50px;
 }
@@ -37,8 +41,34 @@ body {
 .btn{
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: 38px;
     display: flex;
     flex-wrap: wrap;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: blueviolet;
+    background-color: olivedrab;
+    background: linear-gradient( purple, 0%, navy, (100%))
+    border-radius: 5px;
+}
+.btn:hover {
+    color:palevioletred;
+    box-shadow: 0 0.4rem, 1.4rem 0, olivedrab;
+    transition: trasnform 150ms;
+    transform: scale(1.03);
+}
+.next {
+    font-size: 50px;
+    padding: 0;
+    width: 8rem;
+}
+.next:hover {
+    color: palevioletred;
+    box-shadow: 0 0.6rem, 1.2rem 0, olivedrab;
+    transition: transform 150ms;
+    transform: scale(1.05);
 }
 
