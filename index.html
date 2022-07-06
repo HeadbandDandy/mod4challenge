@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/dc9cf7576e.js" crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,29 +15,39 @@
 <!--To the right/left of the container I want a clock/timer section that functions as required for the challenge-->
 <!--container will also be responsive and flexible to allow user to view high scores after quiz-->
 <body>
-    <header class="header" id="top-section">
-        <h1>Unlimited Trivia</h1>
+    <div class="header">
+        <div id="main" class="flex-column flex-center">
+        <h1>Quiz</h1>
         <ul class="highscore">
-            <li><a href="./highscores.html">High Scores</a></li>
+            <li class="highscores"><a href="./highscores.html">High Scores<i class="fa-solid fa-hand-fist"></i></a></li>
         </ul>
-    </header>
-<!--Section above contains html link to high scores as well as header-->
-    <div class="hero">
-        <section>
-            <h2>Are You Ready?</h2>
-            <break>
-                <form action="./quiz.html">
-                    <button type="submit">Yes!</button>
-                </form>
-               </a>
-               <form action=".">
-                <button type="submit">I AM AFRAID</button>
-            </form>
-           </a>
-            </break>
-        </section>
+        </div>
+    
+    <section class="prepare">
+        <h2>
+            Prepare to Begin
+        </h2>
+        <ul>
+            <li>
+                When you are ready click "Start!" and the game will begin.
+            </li>
+            <li>
+                You will have 60 seconds to answer the questions correctly.
+            </li>
+            <li>
+                Answer correctly...you will have a chance at increasing your high score.
+            </li>
+            <li>
+                Answer incorrectly...SUFFER the consequences.
+            </li>
+        </ul>
+    </section>
+</header>
 
-    </div>
-    <!--Section above contains the buttons and the container to start the quiz-->
+<footer class="start-btn" id="gamestarts">
+    <a href="./quiz.html" target="_parent"> <button class="start-game">Start!</button></a>
+</footer>
+<!--Section above contains html link to high scores as well as header-->
+
 </body>
 </html>

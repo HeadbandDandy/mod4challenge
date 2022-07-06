@@ -9,45 +9,52 @@
     <title>Quiz</title>
 </head>
 <body>
-    <header class="prepare">
-        <h1>
-            Prepare to Begin
-        </h1>
-        <ul>
-            <li>
-                When you are ready click start and the game will begin.
-            </li>
-            <li>
-                You will have 60 seconds to answer the questions correctly.
-            </li>
-            <li>
-                Answer correctly...you will have a chance at increasing your high score.
-            </li>
-            <li>
-                Answer incorrectly...SUFFER the consequences.
-            </li>
-        </ul>
-    </header>
-
-    <section>
-        <h2>
-            <a href="#quiz-container" class="start-btn"> Start!</a>
-        </h2>
-    </section>
 
     <div class="container">
-        <div class="quiz-container" class="hide">
-            <div id="question" class="question-header"> Question</div>
-            <div id="quiz-buttons" class="btn-grid">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-            <div class="controls">
-                <button class="next" id="next-button">Next</button>
+        <div id="quiz" class="quiz-container justify-center flex-column">
+            <div id="display">
+                <div class="display-item">
+                    <p id="progress" class="display-fix">
+                        Question
+                    </p>
+                    <div id="progressMeter">
+                        <div id="ProgressFull"></div>
+                    </div>
+
+                </div>
+                <div class="display-item">
+                    <p class="display-fix">
+                        Score
+                    </p>
+                    <h1 class="display-num" id="score">
+                        0
+                    </h1>
+                </div>
+                <div class="display-item">
+                    <h1 class="display-fix" id="timer">
+                        60
+                    </h1>
+                </div>
 
             </div>
+            <div id="question">What is the Answer to this?</div>
+            <div class="multiple-choice">
+                <p class="choice-select">A) </p>
+                <p class="choice-txt" data-number="1">Choice</p>
+            </div>
+            <div class="multiple-choice">
+                <p class="choice-select">B) </p>
+                <p class="choice-txt" data-number="2">Choice</p>
+            </div>
+            <div class="multiple-choice">
+                <p class="choice-select">C) </p>
+                <p class="choice-txt" data-number="3">Choice</p>
+            </div>
+            <div class="multiple-choice">
+                <p class="choice-select">D) </p>
+                <p class="choice-txt" data-number="4">Choice</p>
+            </div>
+            
 
         </div>
     </div>
