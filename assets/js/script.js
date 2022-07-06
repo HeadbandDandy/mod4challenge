@@ -9,7 +9,7 @@
 //"Game-Over" user can save initials/username and score *LOCALSTORAGE*
 
 const question = document.querySelector('#question');
-const scoreNum = document.querySelector('#score');
+const scoreText = document.querySelector('#score');
 const progress = document.querySelector('#progress');
 const choices = Array.from(document.querySelectorAll('.choice-txt'));
 const progressFull = document.querySelector('#progressFull');
@@ -109,8 +109,9 @@ let questions = [
 
 // ARRAY ABOVE CONTAINS ALL THE QUESTIONS AND ANSWERS FOR THE GAME
 
-const SCORE_POINTS = 100;
 const MAX_QUESTIONS = 10;
+
+const SCORE_POINTS = 100;
 
 //constants above will not change, user score is based on 100 points and 5 questions
 
@@ -181,7 +182,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score +=num;
-    score.innerText = score
+    scoreText.innerText = score
 }
 
 //function above increments score when answered correctly
