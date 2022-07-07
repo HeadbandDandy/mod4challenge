@@ -144,3 +144,12 @@ header h1{
     background: gold;
     
 }
+/* high score page styling */
+
+.end-form-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
