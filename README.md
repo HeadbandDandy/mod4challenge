@@ -3,6 +3,11 @@ Creating a quiz
 
 
 
+
+Need to add URL's 
+
+
+
 ***** AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
@@ -19,3 +24,12 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+
+I have thrown in the towel! 
+
+-Timer Function Not working
+-Local Storage not working
+-Display for high score after game not working either
+
+
