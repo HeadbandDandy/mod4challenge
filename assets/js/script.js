@@ -10,11 +10,20 @@
 
 const question = document.querySelector('#question');
 const scoreText = document.querySelector('#score');
-const progress = document.querySelector('#progress');
+const progress= document.querySelectorAll('#progress');
 const choices = Array.from(document.querySelectorAll('.choice-txt'));
 const progressFull = document.querySelector('#progressFull');
 
+
 //constants above link score, progress-bar, questions, text, and progress to the html file
+
+
+
+
+
+
+
+
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -60,7 +69,7 @@ let questions = [
     {
         question: 'What is the only mammal that can not jump?',
         choice1: 'Elephants',
-        choice2: 'Grandam Sadie',
+        choice2: 'Grandma Sadie',
         choice3: 'Lizards',
         choice4: 'Flying Squirrel',
         answer: 1,
@@ -113,8 +122,9 @@ const MAX_QUESTIONS = 10;
 
 const SCORE_POINTS = 100;
 
-//constants above will not change, user score is based on 100 points and 5 questions
 
+
+//constants above will not change, user score is based on 100 points and 5 questions
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -127,10 +137,11 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
-        return window.location.assign('/highscores.html')
+        return window.location.assign('./highscores.html')
     }
+
     questionCounter++;
-    progress.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    progress.innerText = (`Question ${questionCounter} of ${MAX_QUESTIONS}`);
     progressFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
     const questionValue = Math.floor(Math.random() * availableQuestions.length)
@@ -173,6 +184,14 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
         }, 1000)
+
+        var countdown = 60;
+        var timer = document.getElementById('timer');
+
+        decrementSeconds = () => {
+            timer -= 1;
+            timer.innerText = timer
+}
     })
 })
 
@@ -188,3 +207,22 @@ incrementScore = num => {
 //function above increments score when answered correctly
 
 startGame ()
+
+//function above starts the game
+
+
+
+// $('timer').click( function (){
+//     var countdown = 60;
+//     setInterval(function (){
+//         countdown--;
+//         if (countdown >= 0) {
+//             span=document.getElementById('timer');
+//             span.innerText = countdown
+//         }
+//         if (countdown === 0) {
+//             clearInterval(countdown);
+//         }
+//     }, 1000)
+// })
+// countdown.addEventListener('click', countdown)

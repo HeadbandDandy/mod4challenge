@@ -108,7 +108,7 @@ header h1{
     background: greenyellow 
 }
 .incorrect {
-    background: rgb(rgb(242, 6, 6), rgb(209, 236, 209), rgb(103, 103, 110))
+    background: red;
 }
 
 /*styling above is for container which holds the quiz the user will play */
@@ -144,7 +144,7 @@ header h1{
     background: gold;
     
 }
-/* high score page styling */
+/* high score page styling below */
 
 .end-form-container {
     width: 75%;
@@ -152,4 +152,33 @@ header h1{
     flex-direction: column;
     align-items: center;
     max-width: 30rem;
+}
+
+input {
+    margin-bottom: 2.5rem;
+    width: 20rem;
+    max-width: 25rem;
+    font-size: 32px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.name {
+    margin-bottom: 4.5rem;
+}
+
+.btn {
+    padding: 1.0rem;
+}
+
+#saveScore {
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: gold;
 }
